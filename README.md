@@ -29,3 +29,20 @@ This project is a fun proposal web application designed to make your confession 
    ```bash
    git clone https://github.com/your-username/proposal-web-app.git
    cd proposal-web-app
+2. Ensure all images are inside the images/ folder.
+3. Open index.html in a browser to experience the proposal journey.
+4.Optionally, host it on any server to share it with your special someone!
+
+/proposal-web-app
+│
+├── index.html            # First page (Do you love me?)
+├── yes.html              # Second page (Please think again)
+├── yes2.html             # Third page (Ek aur baar soch lo)
+├── yes3.html             # Fourth page (Baby maan jao)
+├── final.html            # End page with celebration!
+├── style.css             # CSS for page styling
+├── /images               # Folder for all stickers
+│   ├── bear_sticker.png
+│   ├── kiss-hand.png
+│   ├── small-kiss.png
+│   └── good-morning.png
