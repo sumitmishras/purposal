@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Proposal Program - Page 1</title>
+</head>
+<body>
+    <div class="container">
+        <img src="images/bear_sticker.png" alt="Bear Sticker" class="sticker">
+        <h1>Do You Love Me? </h1>
+        <p>Sumit is all yours.</p>
+        <button id="yesButton" onclick="nextPage('yes.html')">Yes</button>
+        <button id="noButton" onclick="moveNoButton()">No</button>
+    </div>
+    <script>
+        function nextPage(page) {
+            window.location.href = page;
+        }
+
+        function moveNoButton() {
+            const noButton = document.getElementById("noButton");
+            const container = document.querySelector(".container");
+            const containerRect = container.getBoundingClientRect();
+
+            // Randomly position the No button within the container
+            noButton.style.position = "absolute";
+            noButton.style.left = Math.random() * (containerRect.width - noButton.offsetWidth) + "px";
+            noButton.style.top = Math.random() * (containerRect.height - noButton.offsetHeight) + "px";
+        }
+    </script>
+</body>
+</html>
